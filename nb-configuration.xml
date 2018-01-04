@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-shared-configuration>
+    <!--
+This file contains additional configuration written by modules in the NetBeans IDE.
+The configuration is intended to be shared among all the users of project and
+therefore it is assumed to be part of version control checkout.
+Without this configuration present, some functionality in the IDE may be limited or fail altogether.
+
+    -->
+    <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
+        <!--
+        Properties that influence various parts of the IDE, especially code formatting and the like. 
+        You can copy and paste the single properties, into the pom.xml file and the IDE will pick them up.
+        That way multiple projects can share the same settings (useful for formatting rules for example).
+        Any value defined here will override the pom.xml file value but is only applicable to the current project.
+        -->
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>1.7-web</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>WildFly</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
+        <org-netbeans-modules-javascript2-requirejs.enabled>false</org-netbeans-modules-javascript2-requirejs.enabled>
+        <org-netbeans-modules-css-prep.less_2e_mappings>/less:/css</org-netbeans-modules-css-prep.less_2e_mappings>
+        <org-netbeans-modules-css-prep.less_2e_enabled>false</org-netbeans-modules-css-prep.less_2e_enabled>
+        <org-netbeans-modules-css-prep.sass_2e_enabled>false</org-netbeans-modules-css-prep.sass_2e_enabled>
+        <org-netbeans-modules-css-prep.sass_2e_compiler_2e_options/>
+        <org-netbeans-modules-css-prep.less_2e_compiler_2e_options/>
+        <org-netbeans-modules-css-prep.sass_2e_mappings>/scss:/css</org-netbeans-modules-css-prep.sass_2e_mappings>
+        <org-netbeans-jcode-javaee-generator.org_2e_netbeans_2e_jcode_2e_repository_2e_RepositoryData>rO0ABXNyACxvcmcubmV0YmVhbnMuamNvZGUucmVwb3NpdG9yeS5SZXBvc2l0b3J5RGF0YU722I8etpoAAgAFWgADY2RpWgAHaXNOYW1lZEwACF9wYWNrYWdldAASTGphdmEvbGFuZy9TdHJpbmc7TAAKcHJlZml4TmFtZXEAfgABTAAKc3VmZml4TmFtZXEAfgABeHIANG9yZy5uZXRiZWFucy5qY29kZS5zdGFjay5jb25maWcuZGF0YS5MYXllckNvbmZpZ0RhdGE7sQf6Sn27owIAAUwAFXBhcmVudExheWVyQ29uZmlnRGF0YXQANkxvcmcvbmV0YmVhbnMvamNvZGUvc3RhY2svY29uZmlnL2RhdGEvTGF5ZXJDb25maWdEYXRhO3hwcAEAdAAKcmVwb3NpdG9yeXQAAHQAClJlcG9zaXRvcnk=</org-netbeans-jcode-javaee-generator.org_2e_netbeans_2e_jcode_2e_repository_2e_RepositoryData>
+        <org-netbeans-jcode-rest.org_2e_netbeans_2e_jcode_2e_rest_2e_controller_2e_RESTData>rO0ABXNyACtvcmcubmV0YmVhbnMuamNvZGUucmVzdC5jb250cm9sbGVyLlJFU1REYXRhwj/qfMYVPZwCAAxaAApkb2NzRW5hYmxlWgAGbG9nZ2VyWgAHbWV0cmljc1oACHRlc3RDYXNlTAAIX3BhY2thZ2V0ABJMamF2YS9sYW5nL1N0cmluZztMAAtmaWx0ZXJUeXBlc3QAEExqYXZhL3V0aWwvTGlzdDtMAA9mcm9udGVuZEFwcE5hbWVxAH4AAUwACnByZWZpeE5hbWVxAH4AAUwADnJlc3RDb25maWdEYXRhdAA6TG9yZy9uZXRiZWFucy9qY29kZS9yZXN0L2FwcGxpY2F0aW9uY29uZmlnL1Jlc3RDb25maWdEYXRhO0wACnJldHVyblR5cGV0ADlMb3JnL25ldGJlYW5zL2pjb2RlL3Jlc3QvcmV0dXJudHlwZS9Db250cm9sbGVyUmV0dXJuVHlwZTtMAAxzZWN1cml0eVR5cGV0ADFMb3JnL25ldGJlYW5zL2pjb2RlL3Jlc3QvY29udHJvbGxlci9TZWN1cml0eVR5cGU7TAAKc3VmZml4TmFtZXEAfgABeHIANG9yZy5uZXRiZWFucy5qY29kZS5zdGFjay5jb25maWcuZGF0YS5MYXllckNvbmZpZ0RhdGE7sQf6Sn27owIAAUwAFXBhcmVudExheWVyQ29uZmlnRGF0YXQANkxvcmcvbmV0YmVhbnMvamNvZGUvc3RhY2svY29uZmlnL2RhdGEvTGF5ZXJDb25maWdEYXRhO3hwcAABAAB0AA9jb250cm9sbGVyLnNpdGVwdAADYXBwdAAAc3IAOG9yZy5uZXRiZWFucy5qY29kZS5yZXN0LmFwcGxpY2F0aW9uY29uZmlnLlJlc3RDb25maWdEYXRhfqv36gPJI0YCAANaAAl1c2VKZXJzZXlMAAZfY2xhc3NxAH4AAUwABHBhdGhxAH4AAXhxAH4ABnAAdAARQXBwbGljYXRpb25Db25maWd0AAlyZXNvdXJjZXNwfnIAL29yZy5uZXRiZWFucy5qY29kZS5yZXN0LmNvbnRyb2xsZXIuU2VjdXJpdHlUeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAMU0VDVVJJVFlfSldUdAAKQ29udHJvbGxlcg==</org-netbeans-jcode-rest.org_2e_netbeans_2e_jcode_2e_rest_2e_controller_2e_RESTData>
+        <org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>ide</org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>
+        <org-netbeans-jcode-javaee-generator.org_2e_netbeans_2e_jcode_2e_rest_2e_applicationconfig_2e_RestConfigData>rO0ABXNyADhvcmcubmV0YmVhbnMuamNvZGUucmVzdC5hcHBsaWNhdGlvbmNvbmZpZy5SZXN0Q29uZmlnRGF0YX6r9+oDySNGAgADWgAJdXNlSmVyc2V5TAAGX2NsYXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAEcGF0aHEAfgABeHIANG9yZy5uZXRiZWFucy5qY29kZS5zdGFjay5jb25maWcuZGF0YS5MYXllckNvbmZpZ0RhdGE7sQf6Sn27owIAAUwAFXBhcmVudExheWVyQ29uZmlnRGF0YXQANkxvcmcvbmV0YmVhbnMvamNvZGUvc3RhY2svY29uZmlnL2RhdGEvTGF5ZXJDb25maWdEYXRhO3hwcAB0ABFBcHBsaWNhdGlvbkNvbmZpZ3QACXJlc291cmNlcw==</org-netbeans-jcode-javaee-generator.org_2e_netbeans_2e_jcode_2e_rest_2e_applicationconfig_2e_RestConfigData>
+        <org-netbeans-jcode-ng.org_2e_netbeans_2e_jcode_2e_i18n_2e_I18NConfigData>rO0ABXNyACZvcmcubmV0YmVhbnMuamNvZGUuaTE4bi5JMThOQ29uZmlnRGF0Yaj2HiunMXj7AgADWgAHZW5hYmxlZEwADm5hdGl2ZUxhbmd1YWdldAAiTG9yZy9uZXRiZWFucy9qY29kZS9pMThuL0xhbmd1YWdlO0wADm90aGVyTGFuZ3VhZ2VzdAAQTGphdmEvdXRpbC9MaXN0O3hyADRvcmcubmV0YmVhbnMuamNvZGUuc3RhY2suY29uZmlnLmRhdGEuTGF5ZXJDb25maWdEYXRhO7EH+kp9u6MCAAFMABVwYXJlbnRMYXllckNvbmZpZ0RhdGF0ADZMb3JnL25ldGJlYW5zL2pjb2RlL3N0YWNrL2NvbmZpZy9kYXRhL0xheWVyQ29uZmlnRGF0YTt4cHABc3IAIG9yZy5uZXRiZWFucy5qY29kZS5pMThuLkxhbmd1YWdl4ah6IE82nt8CAAVaAANydGxaAA1za2lwRm9yTG9jYWxlTAAIZGlzcE5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztMAARuYW1lcQB+AAdMAAV2YWx1ZXEAfgAHeHAAAHQAB0VuZ2xpc2hxAH4ACXQAAmVuc3IAE2phdmEudXRpbC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAB3BAAAAAB4</org-netbeans-jcode-ng.org_2e_netbeans_2e_jcode_2e_i18n_2e_I18NConfigData>
+    </properties>
+</project-shared-configuration>

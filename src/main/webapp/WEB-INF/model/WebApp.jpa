@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" ptype="MONOLITH" ppkg="com.mobi5.webapp" epkg="model" v="4.7" rws="_15149190075262" Pws="_15149190075262" cws="_15149190075262" persistenceUnitName="DEFAULT_PU" sm="false" xs="false" id="_15149190075251" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity lbl-ref="_151493099254920" compositePrimaryKeyClass="EducationalInstitutionPK" abs="false" class="EducationalInstitution" v="true" jbn="false" xre="false" m="false" rootElement="_15149190075251" id="_1514919060161">
+        <jpa:attributes>
+            <jpa:basic optional="false" attribute-type="String" v="true" xvt="" name="name" id="_151493099254920">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column unique="true" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="logoUrl" id="_151493293641141">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_15149190603793">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="EducationalInstitution.findAll">
+            <jpa:query>Select e from EducationalInstitution e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="EducationalInstitution.findByName">
+            <jpa:query>Select e from EducationalInstitution e where e.name=:name</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="EducationalInstitution.findByLogoUrl">
+            <jpa:query>Select e from EducationalInstitution e where e.logoUrl=:logoUrl</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity lbl-ref="_151493184368626" compositePrimaryKeyClass="StudentPK" abs="false" class="Student" v="true" jbn="false" xre="false" m="false" rootElement="_15149190075251" id="_1514919108902">
+        <jpa:ath>stibiun</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_151493184368626">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="birthDate" id="_151493376547646">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="picture" id="_151493481070647">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1514919363015" v="true" xvt="" name="institutionUnity" id="_151493253643138">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-one>
+            <jpa:many-to-many collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_1514919162369" connected-attribute-id="_151493217108431" v="true" xvt="" name="mobileApplicationUsers" id="_151493217108632">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-many>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_15149191089035">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Student.findAll">
+            <jpa:query>Select e from Student e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Student.findByName">
+            <jpa:query>Select s from Student s where s.name=:name</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Student.findByBirthDate">
+            <jpa:query>Select s from Student s where s.birthDate=:birthDate</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Student.findByPicture">
+            <jpa:query>Select s from Student s where s.picture=:picture</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity lbl-ref="_151493200741730" compositePrimaryKeyClass="MobileApplicationUserPK" abs="false" class="MobileApplicationUser" v="true" jbn="false" xre="false" m="false" rootElement="_15149190075251" id="_1514919162369">
+        <jpa:ath>stibiun</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_151493200741730">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="username" id="_151509610289522">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="password" id="_151493371216842">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="salt" id="_151493371957243">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="email" id="_151493372869344">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="phone" id="_151493373497845">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:many-to-many own="true" collection-type="java.util.List" cit="java.util.ArrayList" connected-entity-id="_1514919108902" connected-attribute-id="_151493217108632" v="true" xvt="" name="students" id="_151493217108431">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-many>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_15149191623709">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="MobileApplicationUser.findAll">
+            <jpa:query>Select e from MobileApplicationUser e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findByName">
+            <jpa:query>Select a from MobileApplicationUser a where a.name=:name</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findByPassword">
+            <jpa:query>Select m from MobileApplicationUser m where m.password=:password</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findBySalt">
+            <jpa:query>Select m from MobileApplicationUser m where m.salt=:salt</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findByEmail">
+            <jpa:query>Select m from MobileApplicationUser m where m.email=:email</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findByPhone">
+            <jpa:query>Select m from MobileApplicationUser m where m.phone=:phone</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="MobileApplicationUser.findByUsername">
+            <jpa:query>Select m from MobileApplicationUser m where m.username=:username</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity lbl-ref="_151493292136639" compositePrimaryKeyClass="InstitutionUnityPK" abs="false" class="InstitutionUnity" v="true" jbn="false" xre="false" m="false" rootElement="_15149190075251" id="_1514919363015">
+        <jpa:ath>stibiun</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_151493292136639">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="adress" id="_151493292577540">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1514919060161" v="true" xvt="" name="educationalInstitution" id="_151493252662137">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_151491936301713">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="InstitutionUnity.findAll">
+            <jpa:query>Select e from InstitutionUnity e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="InstitutionUnity.findByName">
+            <jpa:query>Select i from InstitutionUnity i where i.name=:name</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="InstitutionUnity.findByAdress">
+            <jpa:query>Select i from InstitutionUnity i where i.adress=:adress</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the Jeddict
+ */</jpa:snp>
+    <jpa:c/>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15149190075262">
+            <i ref="_1514919108902" x="527" y="36"/>
+            <i ref="_1514919162369" x="784" y="56"/>
+            <i ref="_1514919060161" x="19" y="36"/>
+            <i ref="_1514919363015" x="287" y="36"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
