@@ -55,11 +55,13 @@ abstract class AbstractRepository<T, I extends Serializable> {
         return getEntityManager().find(persistedClass, id);
     }
 
+    @SuppressWarnings("unchecked")
     List<T> getAllByNamedQuery(String queryName) {
         Query query = getEntityManager().createNamedQuery(queryName);
         return query.getResultList();
     }
 
+    @SuppressWarnings("unchecked")
     List<T> getAllByNamedQuery(String queryName, Map<String, Object> parameters) {
         Query query = getEntityManager().createNamedQuery(queryName);
         parameters.forEach((key, value) -> {
@@ -68,6 +70,7 @@ abstract class AbstractRepository<T, I extends Serializable> {
         return query.getResultList();
     }
 
+    @SuppressWarnings("unchecked")
     T getByNamedQuery(String queryName, Map<String, Object> parameters) {
         Query query = getEntityManager().createNamedQuery(queryName);
         parameters.forEach((key, value) -> {
